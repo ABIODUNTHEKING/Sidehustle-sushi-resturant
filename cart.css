@@ -29,32 +29,12 @@ nav{
     top: 20px;
 }
 
-nav i{
+nav i, nav img{
     font-size: 30px;
     color: white;
 }
 
 
-h1{
-    display: inline-block;
-    font-weight: 400;
-    font-size: 50px;
-    border-bottom: 7px solid #F1D5BB;
-    margin-bottom: 10px;
-    position: sticky;
-    top: 20px;
-}
-
-div{
-    display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(260px, 1fr));
-    margin-bottom: 10px;
-    grid-row-gap: 15px;
-}
-
-figure img{
-    height: 12rem;
-}
 
 button{
     background-color: #000000;
@@ -67,35 +47,34 @@ button{
     
 }
 
-nav i:hover{
+nav i:hover, .foods:hover{
     background-color: #cebfb1;
     padding: 10px;
     border-radius: 50%;
 }
 
-.foods{
-    padding: 10px 20px;
+
+.cart{
+    padding: 10px 22px;
     background-color: #F1D5BB;
+    color: black;
 }
+
+.cart:hover{
+    padding: 10px 22px;
+    background-color: #F1D5BB;
+    color: black;
+    border-radius: 0;
+}
+
 @media screen and (max-width: 664px){
     body{
         margin-left: 10px;
     }
 
-    div{
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    figure img{
-        width: 18rem;
-    }
     nav{
         top: 20px;
     }
 
-    h1{
-        font-size: 40px;
-      
-    }
+  
 }
